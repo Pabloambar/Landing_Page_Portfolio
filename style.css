@@ -1,4 +1,109 @@
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  body{
+    background-color: black;  
+  }
+
+  .saludo{
+     display: flex;
+     color: green;
+     font-family: 'Rajdhani';
+     font-weight: bold;
+     justify-content: center; 
+     font-size: 35px;
+  }
+
+  .texto{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menuLista{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap :50px;
+
+  }
+
+  .ej{
+    background-color: rgba(30, 7, 241, 0.432);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color:whitesmoke;
+    transition: transform 1s ease-out;
 }
+
+.btn{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Rajdhani';
+}
+
+.ej:hover{
+    cursor: pointer;
+    transform: translateY(10px);
+    background-color: rgb(96, 252, 6);
+    width: 205px;
+    height: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+  .linea{
+      top: 50%;  
+      width: 10em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 180%;
+      white-space: nowrap;
+      overflow: hidden;
+  }
+  
+
+  .anim-cursor{
+    animation: typewriter 3s steps(30) 1s 1 normal both,
+               blinkTextCursor 500ms steps(30) infinite normal;
+  }
+  @keyframes typewriter
+  
+  {
+    from{width: 0;}
+    to{width: 19.2em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+  footer{
+    margin-top: 250px;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  footer div{
+    display: flex;
+    justify-content: center;
+  }
 
